@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../dist/style.css" rel="stylesheet">
+    <title>Weather App</title>
+</head>
+<body class = "flex justify-center items-center min-h-screen bg-slate-100">
+<div class = " flex flex-col bg-white shadow-xl rounded-lg px-6 py-6">
+    <h2 class="text-2xl text-center font-bold mb-4">🌤️Weather App</h2>
+    <div class = "mb-4">
+        <label for = "field" class = "block mb-1">Enter City:</label>
+        <input type="text"
+        placeholder="Enter city name"
+        class = "border border-gray-300 shadow-sm rounded-lg w-full h-10 px-3 mb-2"
+        id = 'field'
+       />
+        <button id = "getweather" class = "w-full bg-gray-300 text-black font-bold rounded-lg shadow-sm py-2 mb-2 ">Get Weather</button>
+    </div>
+   
+    <div class = "mb-2">
+        <span id = "temp">🌡️ Temperature:</span> </div>
+      <div class = "mb-2">
+        <span id = "Description">🌥️Description:</span>
+        </div>
+         <div class = "mb-2">
+        <span id = "windspeed"> 💨Wind Speed:</span>
+    </div>
+</div>
+    
+</body>
+<script src="./weatherApp.js"></script>
+</html>
